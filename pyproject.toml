@@ -1,0 +1,14 @@
+[project]
+name = "ai-chat-project"
+version = "0.1.0"
+dependencies = [
+    "requests",
+    "python-dotenv"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
